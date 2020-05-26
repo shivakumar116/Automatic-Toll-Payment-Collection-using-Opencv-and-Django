@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: rgb(173, 119, 68);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 50%;
+            height: 340px;
+            /* only for demonstration, should be removed */
+            background: rgb(50, 112, 122);
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: right;
+            padding: 20px;
+            width: 50%;
+            background-color: #d3cf98;
+            height: 340px;
+            /* only for demonstration, should be removed */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Automatic Toll Payment Collection</h2>
+    </header>
+    <nav>
+        <h3>Upload Image</h3><br>
+        <form action="Process" method="POST">
+            <label>File Path:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <input type="submit" value="Process">
+        </form>
+    </nav>
+    <article>
+        <h3>Register a User</h3><br><br>
+        <form action="register" method="POST">
+            <label>Owner Name : </label>
+            <input type="text" id="ownername" name="name"><br><br>
+            <label>Mobile Numb : </label>
+            <input type="number" id="MobileNum" name="phone"><br><br>
+            <label>Vehicle Num : </label>
+            <input type="text" id="ownername" name="vno"><br><br>
+            <label>VehicleClass : </label>
+            <input type="number" id="class" name="class"><br><br>
+            <input type="submit" value="Register">
+        </form>
+    </article>
+
+
+</body>
+
+</html>
